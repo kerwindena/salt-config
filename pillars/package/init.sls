@@ -2,7 +2,12 @@ package:
 
 {% if grains['os'] == 'Arch' %}
 
-  emacs-nox: emacs-nox
+{% if grains['graphical'] == 'True' %}
+  emacs: emacs-nox
+{% else %}
+  emacs: emacs
+{% endif %}
+
   git: git
   python2-pygit2: python2-pygit2
   salt-master: salt-zmq
