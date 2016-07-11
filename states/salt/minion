@@ -1,6 +1,8 @@
 master:
   - salt.net.janbeinke.com
 
+hash_type: sha256
+
 schedule:
   highstate:
     function: state.highstate
