@@ -6,7 +6,7 @@ base:
     - users.jan
 
   'cpuarch:x86_64':
-    -  match: grain
+    - match: grain
     - packages-base
 
   'salt':

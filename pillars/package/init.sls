@@ -1,13 +1,5 @@
 package:
 
-{% if grains['os'] == 'Arch' %}
-
-{% if grains.get('graphical', 'False') == 'True' %}
-  emacs: emacs-nox
-{% else %}
-  emacs: emacs
-{% endif %}
-
   git: git
   python2-pygit2: python2-pygit2
   salt-master: salt-zmq
@@ -15,4 +7,8 @@ package:
   sudo: sudo
   zsh: zsh
 
+{% if grains.get('graphical', 'False') == 'True' %}
+  emacs: emacs-nox
+{% else %}
+  emacs: emacs
 {% endif %}

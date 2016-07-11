@@ -1,4 +1,5 @@
 base:
 
-  '*':
-    - package
+  'os:Arch':
+    - match: grain
+    - package.arch
