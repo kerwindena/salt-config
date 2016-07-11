@@ -3,6 +3,7 @@ base:
   '*':
     - salt
     - packages-min
+    - users.jan
 
   'cpuarch:x86_64':
     -  match: grain
@@ -10,4 +11,3 @@ base:
 
   'salt':
     - salt.master
-    - users.jan
