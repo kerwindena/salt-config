@@ -5,3 +5,4 @@ base:
 
   'salt':
     - salt.master
+    - users.jan
