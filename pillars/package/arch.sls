@@ -7,7 +7,7 @@ package:
   sudo: sudo
   zsh: zsh
 
-{% if grains.get('graphical', default='False') == 'True' %}
+{% if grains.get('graphical', default=False) == True %}
   emacs: emacs
 {% else %}
   emacs: emacs-nox
