@@ -2,7 +2,7 @@ package:
 
 {% if grains['os'] == 'Arch' %}
 
-{% if grains['graphical'] == 'True' %}
+{% if grains.get('graphical', 'False') == 'True' %}
   emacs: emacs-nox
 {% else %}
   emacs: emacs
