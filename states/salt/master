@@ -1,0 +1,15 @@
+fileserver_backend:
+  - git
+
+hash_type: sha256
+
+timeout: 60
+
+gitfs_remotes:
+  - https://github.com/kerwindena/salt-config.git:
+      - root: states
+
+ext_pillar:
+  - git:
+      - https://github.com/kerwindena/salt-config.git:
+          - root: pillars
