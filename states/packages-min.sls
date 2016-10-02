@@ -1,5 +1,4 @@
 packages-min:
-  packages-min-installed:
   pkg.latest:
     - pkgs:
         - {{ salt['pillar.get']('package:git', 'git') }}
