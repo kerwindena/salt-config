@@ -2,6 +2,7 @@ base:
 
   '*':
     - salt
+    - sudo
     - packages-min
     - users.jan
 
