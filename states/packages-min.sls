@@ -4,6 +4,7 @@ packages-min:
         - {{ salt['pillar.get']('package:git', 'git') }}
         - {{ salt['pillar.get']('package:hwinfo', 'hwinfo') }}
         - {{ salt['pillar.get']('package:inxi', 'inxi') }}
+    - refresh: True
     - require:
         - pkg: packages-min-installed
 
@@ -13,3 +14,4 @@ packages-min-installed:
   pkg.installed:
     - pkgs:
         - {{ salt['pillar.get']('package:zsh', 'zsh') }}
+    - refresh: True
