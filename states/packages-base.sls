@@ -1,5 +1,5 @@
 packages-base:
 
-  pkg.latest:
+  pkg.installed:
     - pkgs:
       - {{ salt['pillar.get']('package:emacs', 'emacs-nox') }}
