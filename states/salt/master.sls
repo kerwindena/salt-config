@@ -1,6 +1,6 @@
 salt-master:
 
-  pkg.latest:
+  pkg.installed:
     - pkgs:
         - {{ salt['pillar.get']('package:salt-master', 'salt') }}
         - {{ salt['pillar.get']('package:python2-pygit2', 'python2-pygit2') }}
