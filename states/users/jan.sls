@@ -11,6 +11,7 @@ jan:
         - lock
         - users
         - uucp
+    - password: {{ salt['pillar.get']('users:jan:password') }}
     - require:
         - pkg: packages-min
 
