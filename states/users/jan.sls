@@ -13,6 +13,7 @@ jan:
         - uucp
     - password: {{ salt['pillar.get']('users:jan:password') }}
     - require:
+        - file: sudo
         - pkg: packages-min
 
   ssh_auth.present:
