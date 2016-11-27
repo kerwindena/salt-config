@@ -1,5 +1,4 @@
 master:
-  - salt.net.janbeinke.com
   - janbeinke.com
 
 hash_type: sha256
