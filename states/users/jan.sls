@@ -9,6 +9,7 @@ jan:
         - audio
         - libvirt
         - lock
+        - network
         - users
         - uucp
     - password: {{ salt['pillar.get']('users:jan:password') }}
