@@ -9,6 +9,7 @@ package:
   salt-master: salt-zmq
   salt-minion: salt-zmq
   sudo: sudo
+  urxvt-terminfo: rxvt-unicode-terminfo
   zsh: zsh
 
 {% if grains.get('graphical', default=False) == True %}
