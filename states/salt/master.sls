@@ -2,8 +2,8 @@ salt-master:
 
   pkg.installed:
     - pkgs:
-        - {{ salt['pillar.get']('package:salt-master', 'salt') }}
-        - {{ salt['pillar.get']('package:python2-pygit2', 'python2-pygit2') }}
+        - {{ salt['pillar.get']('package:salt-master') }}
+        - {{ salt['pillar.get']('package:python2-pygit2') }}
 
   file.managed:
     - name: /etc/salt/master
