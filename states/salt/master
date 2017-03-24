@@ -1,4 +1,5 @@
 fileserver_backend:
+  - roots
   - git
 
 hash_type: sha256
