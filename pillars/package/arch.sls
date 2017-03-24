@@ -6,8 +6,8 @@ package:
   postgresql: postgresql
   python2: python2
   python2-pygit2: python2-pygit2
-  salt-master: salt-zmq
-  salt-minion: salt-zmq
+  salt-master: salt
+  salt-minion: salt
   sudo: sudo
   urxvt-terminfo: rxvt-unicode-terminfo
   zsh: zsh
