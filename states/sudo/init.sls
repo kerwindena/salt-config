@@ -1,6 +1,6 @@
 sudo:
   pkg.installed:
-    - name: {{ salt['pillar.get']('package:sudo') }}
+    - name: sudo
   file.managed:
     - name: /etc/sudoers
     - source: salt://sudo/sudoers
