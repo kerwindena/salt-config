@@ -1,0 +1,5 @@
+include:
+
+  - .git
+  - .inxi
+  - .zsh
