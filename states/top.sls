@@ -3,13 +3,13 @@ base:
   '*':
     - salt
     - sudo
-    - packages-min
+    - basepackages
     - terminfo.urxvt
     - users.jan
 
   'cpuarch:x86_64':
     - match: grain
-    - packages-base
+    - basepackages.extended
 
   'salt':
     - salt.master
