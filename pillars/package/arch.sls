@@ -9,7 +9,6 @@ package:
   salt-master: salt
   salt-minion: salt
   sudo: sudo
-  urxvt-terminfo: rxvt-unicode-terminfo
   zsh: zsh
 
 {% if grains.get('graphical', default=False) == True %}

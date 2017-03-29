@@ -4,6 +4,7 @@ base:
     - salt
     - sudo
     - packages-min
+    - terminfo.urxvt
     - users.jan
 
   'cpuarch:x86_64':
