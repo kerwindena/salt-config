@@ -15,7 +15,8 @@ jan:
     - password: {{ salt['pillar.get']('users:jan:password') }}
     - require:
         - file: sudo
-        - pkg: basepackages
+        - pkg: sudo
+        - pkg: zsh
 
   ssh_auth.present:
     - user: jan
