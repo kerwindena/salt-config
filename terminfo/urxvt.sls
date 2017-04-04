@@ -9,11 +9,12 @@ urxvt-terminfo:
   {% else %}
 
   file.managed:
-    - name: /etc/terminfo/rxvt-unicode-256color.terminfo
+    - name: /etc/salt/tmp/terminfo/rxvt-unicode-256color.terminfo
     - source: salt://{{ tpldir }}/rxvt-unicode-256color.terminfo
+    - makedirs: True
 
   cmd.run:
-    - name: tic /etc/terminfo/rxvt-unicode-256color.terminfo
+    - name: tic /etc/salt/tmp/terminfo/rxvt-unicode-256color.terminfo
     - onchanges:
         - file: .
 
