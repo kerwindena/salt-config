@@ -1,4 +1,4 @@
-urxvt-terminfo:
+terminfo-urxvt:
 
   {% if grains.get('os') == 'Arch' %}
 
@@ -16,6 +16,6 @@ urxvt-terminfo:
   cmd.run:
     - name: tic /etc/salt/tmp/terminfo/rxvt-unicode-256color.terminfo
     - onchanges:
-        - file: .
+        - file: terminfo-urxvt
 
   {% endif %}
