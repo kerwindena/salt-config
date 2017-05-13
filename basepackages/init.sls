@@ -1,5 +1,6 @@
 include:
 
+  - .coreutils
   - .git
   - .htop
   - .inxi
