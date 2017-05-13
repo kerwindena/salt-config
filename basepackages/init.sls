@@ -1,7 +1,7 @@
 include:
 
-  - .coreutils
   - .git
   - .htop
   - .inxi
+  - .net-tools
   - .zsh
